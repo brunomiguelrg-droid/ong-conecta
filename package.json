@@ -1,0 +1,15 @@
+{
+  "name": "ong-conecta",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Projeto front-end acadêmico para uma ONG.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.7"
+  }
+}

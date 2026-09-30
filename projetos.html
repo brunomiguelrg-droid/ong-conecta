@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça os projetos sociais da ONG Conecta e descubra como apoiar.">
+  <title>Projetos | ONG Conecta</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="./index.html" aria-label="ONG Conecta - página inicial">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>ONG Conecta</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>☰
+      </button>
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="./cadastro.html">Seja voluntário</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo escuro">◐</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Impacto em ação</p>
+        <h1>Projetos que transformam</h1>
+        <p>Escolha uma iniciativa para conhecer e descobrir formas de contribuir.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="projetos-titulo">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="projetos-titulo">Projetos em destaque</h2>
+          <p>Você pode apoiar financeiramente, participar como voluntário ou compartilhar as iniciativas.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-cover project-education" aria-hidden="true">📚</div>
+            <div class="project-body">
+              <span class="tag">Educação</span>
+              <h3>Conecta Educação</h3>
+              <p>Oficinas de reforço escolar e orientação para jovens da comunidade.</p>
+              <div class="progress-label">
+                <span>Meta: R$ 12.000</span><strong>72%</strong>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Arrecadação do projeto Conecta Educação" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 72%"></span>
+              </div>
+              <button class="button button-secondary project-action" type="button" data-project="Conecta Educação">Quero apoiar</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover project-digital" aria-hidden="true">💻</div>
+            <div class="project-body">
+              <span class="tag">Tecnologia</span>
+              <h3>Internet para Todos</h3>
+              <p>Doação de equipamentos e oficinas de letramento digital para famílias.</p>
+              <div class="progress-label">
+                <span>Meta: R$ 18.000</span><strong>54%</strong>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Arrecadação do projeto Internet para Todos" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 54%"></span>
+              </div>
+              <button class="button button-secondary project-action" type="button" data-project="Internet para Todos">Quero apoiar</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-cover project-food" aria-hidden="true">🥕</div>
+            <div class="project-body">
+              <span class="tag">Segurança alimentar</span>
+              <h3>Rede de Alimentos</h3>
+              <p>Distribuição de cestas e aproveitamento de alimentos para famílias.</p>
+              <div class="progress-label">
+                <span>Meta: R$ 10.000</span><strong>81%</strong>
+              </div>
+              <div class="progress" role="progressbar" aria-label="Arrecadação do projeto Rede de Alimentos" aria-valuenow="81" aria-valuemin="0" aria-valuemax="100">
+                <span style="width: 81%"></span>
+              </div>
+              <button class="button button-secondary project-action" type="button" data-project="Rede de Alimentos">Quero apoiar</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" aria-labelledby="apoie-titulo">
+      <div class="container narrow">
+        <h2 id="apoie-titulo">Como você pode ajudar?</h2>
+        <p>Doe, seja voluntário ou divulgue nossas ações. Toda contribuição ajuda a ampliar o alcance dos projetos.</p>
+        <a class="button button-primary" href="./cadastro.html">Quero ser voluntário</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>ONG Conecta</strong><p>Conectando pessoas, recursos e oportunidades.</p></div>
+      <div><h2 class="footer-title">Contato</h2><address><a href="mailto:contato@ongconecta.org">contato@ongconecta.org</a><br><a href="tel:+551140000000">(11) 4000-0000</a></address></div>
+    </div>
+    <div class="container footer-bottom"><small>&copy; <span data-current-year></span> ONG Conecta. Projeto acadêmico.</small></div>
+  </footer>
+
+  <dialog id="support-dialog" class="modal" aria-labelledby="dialog-title">
+    <div class="modal-content">
+      <button class="modal-close" type="button" aria-label="Fechar janela">×</button>
+      <p class="eyebrow">Apoio</p>
+      <h2 id="dialog-title">Obrigado pelo interesse!</h2>
+      <p id="dialog-message">Você selecionou um projeto.</p>
+      <a class="button button-primary" href="./cadastro.html">Quero participar</a>
+    </div>
+  </dialog>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

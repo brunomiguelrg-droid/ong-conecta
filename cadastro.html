@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastre-se como voluntário da ONG Conecta.">
+  <title>Seja voluntário | ONG Conecta</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo principal</a>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a class="brand" href="./index.html" aria-label="ONG Conecta - página inicial">
+        <span class="brand-mark" aria-hidden="true">OC</span>
+        <span>ONG Conecta</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="sr-only">Abrir menu</span>☰
+      </button>
+      <nav id="menu-principal" class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="./projetos.html">Projetos</a></li>
+          <li><a href="./cadastro.html" aria-current="page">Seja voluntário</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar modo escuro">◐</button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Faça parte da rede</p>
+        <h1>Cadastre-se como voluntário</h1>
+        <p>Preencha o formulário e conte como você gostaria de contribuir.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="formulario-titulo">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <h2 id="formulario-titulo">Seus dados</h2>
+          <p>Usaremos essas informações apenas para entrar em contato sobre oportunidades de voluntariado.</p>
+          <ul class="check-list">
+            <li>Participação em ações presenciais ou online</li>
+            <li>Contato sobre oportunidades compatíveis</li>
+            <li>Respeito à privacidade dos dados informados</li>
+          </ul>
+        </div>
+
+        <form id="volunteer-form" class="form-card" novalidate>
+          <fieldset>
+            <legend>Informações pessoais</legend>
+
+            <div class="form-group">
+              <label for="nome">Nome completo *</label>
+              <input id="nome" name="nome" type="text" autocomplete="name" required minlength="3" aria-describedby="nome-help nome-error">
+              <small id="nome-help">Digite seu nome e sobrenome.</small>
+              <span id="nome-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+                <span id="email-error" class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="nascimento">Data de nascimento *</label>
+                <input id="nascimento" name="nascimento" type="date" autocomplete="bday" required aria-describedby="nascimento-error">
+                <span id="nascimento-error" class="field-error" role="alert"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Endereço</legend>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cep">CEP *</label>
+                <input id="cep" name="cep" type="text" inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}-?[0-9]{3}" placeholder="00000-000" required aria-describedby="cep-error">
+                <span id="cep-error" class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="cidade">Cidade *</label>
+                <input id="cidade" name="cidade" type="text" autocomplete="address-level2" required aria-describedby="cidade-error">
+                <span id="cidade-error" class="field-error" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="estado">Estado *</label>
+                <select id="estado" name="estado" autocomplete="address-level1" required aria-describedby="estado-error">
+                  <option value="">Selecione</option>
+                  <option>AC</option><option>AL</option><option>AP</option><option>AM</option>
+                  <option>BA</option><option>CE</option><option>DF</option><option>ES</option>
+                  <option>GO</option><option>MA</option><option>MT</option><option>MS</option>
+                  <option>MG</option><option>PA</option><option>PB</option><option>PR</option>
+                  <option>PE</option><option>PI</option><option>RJ</option><option>RN</option>
+                  <option>RS</option><option>RO</option><option>RR</option><option>SC</option>
+                  <option>SP</option><option>SE</option><option>TO</option>
+                </select>
+                <span id="estado-error" class="field-error" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" pattern="\(?[0-9]{2}\)?\s?[0-9]{4,5}-?[0-9]{4}" placeholder="(11) 99999-9999" required aria-describedby="telefone-error">
+                <span id="telefone-error" class="field-error" role="alert"></span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Interesse</legend>
+            <div class="form-group">
+              <label for="area">Área em que deseja ajudar *</label>
+              <select id="area" name="area" required aria-describedby="area-error">
+                <option value="">Selecione uma área</option>
+                <option>Educação</option>
+                <option>Inclusão digital</option>
+                <option>Comunicação</option>
+                <option>Eventos</option>
+                <option>Gestão e administração</option>
+              </select>
+              <span id="area-error" class="field-error" role="alert"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Conte um pouco sobre você</label>
+              <textarea id="mensagem" name="mensagem" rows="5" maxlength="500" aria-describedby="mensagem-help"></textarea>
+              <small id="mensagem-help">Opcional. Máximo de 500 caracteres.</small>
+            </div>
+
+            <label class="checkbox-label">
+              <input id="consentimento" name="consentimento" type="checkbox" required aria-describedby="consentimento-error">
+              <span>Concordo em ser contatado pela ONG Conecta sobre oportunidades de voluntariado. *</span>
+            </label>
+            <span id="consentimento-error" class="field-error" role="alert"></span>
+          </fieldset>
+
+          <button class="button button-primary button-full" type="submit">Enviar cadastro</button>
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><strong>ONG Conecta</strong><p>Conectando pessoas, recursos e oportunidades.</p></div>
+      <div><h2 class="footer-title">Contato</h2><address><a href="mailto:contato@ongconecta.org">contato@ongconecta.org</a><br><a href="tel:+551140000000">(11) 4000-0000</a></address></div>
+    </div>
+    <div class="container footer-bottom"><small>&copy; <span data-current-year></span> ONG Conecta. Projeto acadêmico.</small></div>
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
